@@ -1,0 +1,37 @@
+Revision history for Perl extension FormMagick.
+
+0.2.9
+
+Made FormMagick CPAN-friendly.
+
+Changes to DTD:
+NAME attriute on PAGE element is now required
+optional DESCRIPTION attribute for PAGE and FIELD elements
+
+Validation changes:
+domain_name routine now works
+
+L10N changes:
+You can now add items to the lexicon with the add_lexicon method
+
+Debugging:
+Adding DEBUG => 1 to your new() call will turn debugging on
+You can use debug messages yourself with $fm->debug($message)
+
+Look and feel:
+You can now put DESCRIPTION attributes on your pages and/or fields, and
+   they'll show up nicely output in the HTML.
+Most parts of the form now have CSS "label" attriutes so you can
+   change the look and feel of your FormMagick apps
+
+Other functionality changes:
+Page pre/post events now work
+Form post events now work
+You can use form post events to "branch" to a page other than the
+   next one in line by setting $cgi's "wherenext" param
+when calling the new() method, TYPE now defaults to "file" and SOURCE
+   to the same filename as your script but with a .xml extension
+
+Examples:
+A worked example of collecting email retrieval options for the e-smith
+server and gateway system is included in examples/e-smith/

@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>FAQ - Frequently asked questions about FormMagick</TITLE>
+<LINK REV="made" HREF="mailto:none">
+</HEAD>
+
+<BODY>
+
+<!-- INDEX BEGIN -->
+
+<UL>
+
+	<LI><A HREF="#NAME">NAME</A>
+	<LI><A HREF="#TROUBLESHOOTING">TROUBLESHOOTING</A>
+	<UL>
+
+		<LI><A HREF="#Why_isn_t_my_data_preserved_from">Why isn't my data preserved from one page to the next?</A>
+	</UL>
+
+</UL>
+<!-- INDEX END -->
+
+<HR>
+<P>
+<H1><A NAME="NAME">NAME</A></H1>
+<P>
+FormMagick FAQ - Frequently asked questions about FormMagick
+
+<P>
+<HR>
+<H1><A NAME="TROUBLESHOOTING">TROUBLESHOOTING</A></H1>
+<P>
+<HR>
+<H2><A NAME="Why_isn_t_my_data_preserved_from">Why isn't my data preserved from one page to the next?</A></H2>
+<P>
+You probably need to make your <CODE>session-tokens</CODE> directory writable and executable by the web server. Either:
+
+<P>
+<PRE>    chown www session-tokens 
+       (assuming your webserver runs as the www user)
+    chmod 700 session-tokens
+</PRE>
+<P>
+Or...
+
+<P>
+<PRE>    chown 777 session-tokens
+</PRE>
+</BODY>
+
+</HTML>

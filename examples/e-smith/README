@@ -1,0 +1,10 @@
+This is an experimental version of the e-smith server and gateway email
+retrieval configuration interface.  The goal is to see whether
+FormMagick can be used by e-smith instead of their more traditional
+CGIs.
+
+The original perl script used by e-smith is in emailretrieval-orig.pl,
+and its HTML output (showing the form layout) is in
+emailretrieval-orig.html
+
+Any comments/questions/etc talk to <skud@infotrope.net>

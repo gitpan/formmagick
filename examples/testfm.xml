@@ -1,0 +1,62 @@
+  <FORM TITLE="FormMagick demo application" HEADER="testfm_header.tmpl" 
+    FOOTER="testfm_footer.tmpl" PRE-EVENT="setup_form" POST-EVENT="submit_order">
+    <PAGE NAME="Personal" TITLE="Personal details" TEMPLATE="myform_page.tmpl" 
+      POST-EVENT="lookup_group_info">
+      <FIELD ID="firstname" LABEL="Your first name" TYPE="TEXT" 
+        VALIDATION="nonblank"/>
+      <FIELD ID="lastname" LABEL="Your surname" TYPE="TEXT" 
+        VALIDATION="nonblank"/>
+      <FIELD ID="username" LABEL="Choose a username" TYPE="TEXT" VALUE="username" 
+        VALIDATION="username, minlength(4)"/>
+      <FIELD ID="group" LABEL="Choose a group" TYPE="SELECT" 
+        OPTIONS="my_groups" VALIDATION="nonblank"/>
+    </PAGE>
+    <PAGE NAME="Survey" TITLE="Annoying survey questions">
+      <FIELD ID="favorite_number" LABEL="Your favorite number" TYPE="TEXT"
+       VALIDATION="number"/>
+      <FIELD ID="quest" LABEL="Your quest" TYPE="TEXT"
+       OPTIONS="my_quests"/>
+      <FIELD ID="favorite_color" LABEL="Your favorite color" TYPE="RADIO"
+       OPTIONS="colors" VALIDATION="word"/>
+      <FIELD ID="date" LABEL="Your birthday" TYPE="TEXT" VALIDATION="date"/>
+      <FIELD ID="iso_country_code" LABEL="Your favorite ISO country code"
+       TYPE="TEXT" VALIDATION="date"/>
+      <FIELD ID="binary" LABEL="Is your hair blue?" TYPE="CHECKBOX" VALIDATION="nonblank"/>
+      <FIELD ID="state" LABEL="Your favorite US state" TYPE="TEXT" VALIDATION="US_state"/>
+      <FIELD ID="zip" LABEL="Your US zipcode" TYPE="TEXT" VALIDATION="US_zipcode, nonblank"/>
+      <FIELD ID="bigblob" LABEL="put text here, up to 300 chars" TYPE="TEXTAREA" 
+       VALIDATION="nonblank, maxlength(300)"/>
+
+    </PAGE>
+    <PAGE NAME="Number" TITLE="Number tests">
+      <FIELD ID="num1" LABEL="put exactly 2 letters here" TYPE="TEXT"
+       VALIDATION="exactlength(2)"/>
+      <FIELD ID="num2" LABEL="put more than 4 letters here" TYPE="TEXT"
+       VALIDATION="minlength(4)"/>
+      <FIELD ID="num3" LABEL="put less than 6 letters here" TYPE="TEXT"
+       VALIDATION="maxlength(6)"/>
+      <FIELD ID="num4" LABEL="put 4-10 letters here" TYPE="TEXT"
+       VALIDATION="lengthrange(4,10)"/>
+    </PAGE>
+    <PAGE NAME="Net" TITLE="Net-related items">
+     <FIELD ID="some_url" LABEL="put a URL here." TYPE="TEXT" 
+      VALIDATION="url"/>
+     <FIELD ID="some_email" LABEL="an email address." TYPE="TEXT" 
+      VALIDATION="email"/>
+     <FIELD ID="domain" LABEL="a domain name." TYPE="TEXT" 
+      VALIDATION="domain_name"/>
+     <FIELD ID="ip" LABEL="a valid IP." TYPE="TEXT"
+      VALIDATION="ip_number"/>
+    </PAGE>
+    <PAGE NAME="Payment" TITLE="Payment details">
+      <FIELD ID="cardtype" LABEL="Credit card type" TYPE="SELECT" 
+        OPTIONS="list_credit_card_types" VALIDATION="credit_card_type"/>
+      <FIELD ID="cardnumber" LABEL="Credit card number" TYPE="TEXT" 
+        VALIDATION="credit_card_number"/>
+      <FIELD ID="cardexpiry" LABEL="Expiry date (MM/YY)" TYPE="TEXT" 
+        VALIDATION="credit_card_expiry"/>
+    </PAGE>
+  </FORM>
+
+
+

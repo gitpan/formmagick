@@ -1,0 +1,45 @@
+body, p, li, ul, ol, dt, dl, dd, h2, h3, h4, form, td, th, small, form {
+	font-family: arial, sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+h1 {
+	font-size: x-large;
+}
+
+h2 {
+	font-size: large;
+}
+
+.pagedescription {
+	font-weight: bold;
+}
+
+/* field labels cells*/
+.label {
+	font-family: arial, sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+/* input field cells */
+.field {
+	text-align: left;
+	font-family: arial, sans-serif;
+	color: #000000;
+	background-color: #ffffff;
+
+}
+
+/* the table cell containing the next/previous buttons etc */
+.buttons {
+
+}
+
+/* error messages */
+.error {
+	color: #ff0000;
+}
+
+

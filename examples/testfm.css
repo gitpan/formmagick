@@ -1,0 +1,22 @@
+/* field labels cells*/
+.label {
+	text-align: right;
+
+}
+
+/* input field cells */
+.field {
+	text-align: left;
+}
+
+/* the table cell containing the next/previous buttons etc */
+.buttons {
+
+}
+
+/* error messages */
+.error {
+	color: #ff0000;
+}
+
+

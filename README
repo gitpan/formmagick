@@ -1,0 +1,25 @@
+FormMagick 0.2.9
+Copyright (c) 2000-2001 Kirrily "Skud" Robert <skud@infotrope.net>
+
+This software is distributed under the GNU General Public License (GPL),
+a copy of which can be found in the file COPYING in this directory.
+
+For installation instructions, read the file INSTALL.
+
+More detailed documentation can be found in the doc/ directory or in
+the POD ("plain old documentation") embedded in the Perl modules.  To
+read these, type:
+
+	perldoc FormMagick
+	perldoc FormMagick::L10N
+	perldoc FormMagick::Validator
+	perldoc FormMagick::FAQ
+
+This software is in late alpha (0.3.0 will be beta).  That means that 
+if it breaks, you get to keep both the pieces.  The mean reason for 
+distributing it is to encourage people to assist in its development.  
+If you are interested in doing so, check out the project homepage on 
+Sourceforge.
+
+FormMagick can be found at http://sourceforge.net/projects/formmagick/
+

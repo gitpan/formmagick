@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML><HEAD><TITLE>e-smith manager</TITLE>
+<LINK REV=MADE HREF="mailto:jdm%40e-smith.com">
+<META NAME="copyright" CONTENT="copyright (c) 1999-2001 e-smith, inc.">
+</HEAD><BODY TOPMARGIN="0" MARGINWIDTH="0" ALINK="#707070" MARGINHEIGHT="0" BGCOLOR="#FFFFFF" LEFTMARGIN="0" LINK="#707070" VLINK="#707070" TEXT="#000000"><TABLE CELLSPACING="0" BORDER="0" CELLPADDING="0" ALIGN="LEFT" WIDTH="100%"><TR VALIGN="BOTTOM"><TD HEIGHT="100" BGCOLOR="#FF3E00"><IMG BORDER="0" ALT="e-smith manager" SRC="/e-smith-common/e-smith-manager.gif"></TD></TR> <TR><TD><IMG HEIGHT="108" BORDER="0" ALT="Banner 1" SRC="/e-smith-common/banner.gif" WIDTH="176"></TD></TR></TABLE><BR CLEAR="ALL"><DIV STYLE="position: absolute; visibility: inherit; top: 170px; left: 56px; width: 85%; z-index: 2"><FONT FACE="Helvetica,Arial"><H2>Change email retrieval settings</H2><FORM METHOD="POST" ACTION="/cgi-bin/emailretrieval" ENCTYPE="application/x-www-form-urlencoded">
+<TABLE CELLPADDING="4" BORDER="0" CELLSPACING="0"><TR><TD COLSPAN="2"><FONT FACE="Helvetica,Arial"><P>The mail retrieval mode can be set to standard (for dedicated Internet connections), ETRN (recommended for dialup connections), or multi-drop (for dialup connections if ETRN is not supported by your Internet provider).</P></FONT></TD></TR> <TR><TD><FONT FACE="Helvetica,Arial">Email retrieval mode:</FONT></TD> <TD><FONT FACE="Helvetica,Arial"><SELECT NAME="mode">
+<OPTION SELECTED VALUE="standard">Standard
+<OPTION  VALUE="etrn">ETRN
+<OPTION  VALUE="multidrop">Multi-drop
+</SELECT>
+</FONT></TD></TR> <TR><TD COLSPAN="2"><FONT FACE="Helvetica,Arial"><P>Your e-smith system includes a complete, full-featured email server. However, if for some reason you wish to delegate email processing to another system, specify the IP address of the delegate system here. For normal operation, leave this field blank.</P></FONT></TD></TR> <TR><TD><FONT FACE="Helvetica,Arial">Delegate mail server:</FONT></TD> <TD><FONT FACE="Helvetica,Arial"><INPUT TYPE="text" NAME="delegate"  SIZE=32></FONT></TD></TR> <TR><TD COLSPAN="2"><FONT FACE="Helvetica,Arial"><P>For ETRN or multi-drop, specify the hostname or IP address of your secondary mail server. (If using the standard email setup, this field can be left blank.)</P></FONT></TD></TR> <TR><TD><FONT FACE="Helvetica,Arial">Secondary mail server:</FONT></TD> <TD><FONT FACE="Helvetica,Arial"><INPUT TYPE="text" NAME="server" VALUE="mail.myisp.xxx" SIZE=32></FONT></TD></TR> <TR><TD COLSPAN="2"><FONT FACE="Helvetica,Arial"><P>For ETRN or multi-drop, you can control how frequently the e-smith server and gateway contacts your secondary email server to fetch email. More frequent connections mean that you receive your email more quickly, but also cause Internet requests to be sent more often, possibly increasing your phone and Internet charges.</P></FONT></TD></TR> <TR><TD><FONT FACE="Helvetica,Arial">During office hours (8:00 AM to 6:00 PM) on weekdays:</FONT></TD> <TD><FONT FACE="Helvetica,Arial"><SELECT NAME="fetchmailFreqOffice">
+<OPTION  VALUE="never">Not at all
+<OPTION SELECTED VALUE="every5min">Every 5 minutes
+<OPTION  VALUE="every15min">Every 15 minutes
+<OPTION  VALUE="every30min">Every 30 minutes
+<OPTION  VALUE="everyhour">Every hour
+<OPTION  VALUE="every2hrs">Every 2 hours
+</SELECT>
+</FONT></TD></TR> <TR><TD><FONT FACE="Helvetica,Arial">Outside office hours (8:00 AM to 6:00 PM) on weekdays:</FONT></TD> <TD><FONT FACE="Helvetica,Arial"><SELECT NAME="fetchmailFreqOutside">
+<OPTION  VALUE="never">Not at all
+<OPTION  VALUE="every5min">Every 5 minutes
+<OPTION  VALUE="every15min">Every 15 minutes
+<OPTION SELECTED VALUE="every30min">Every 30 minutes
+<OPTION  VALUE="everyhour">Every hour
+<OPTION  VALUE="every2hrs">Every 2 hours
+</SELECT>
+</FONT></TD></TR> <TR><TD><FONT FACE="Helvetica,Arial">During the weekend:</FONT></TD> <TD><FONT FACE="Helvetica,Arial"><SELECT NAME="fetchmailFreqWeekend">
+<OPTION SELECTED VALUE="never">Not at all
+<OPTION  VALUE="every5min">Every 5 minutes
+<OPTION  VALUE="every15min">Every 15 minutes
+<OPTION  VALUE="every30min">Every 30 minutes
+<OPTION  VALUE="everyhour">Every hour
+<OPTION  VALUE="every2hrs">Every 2 hours
+</SELECT>
+</FONT></TD></TR> <TR><TD COLSPAN="2"><FONT FACE="Helvetica,Arial"><P>For multi-drop email, specify the POP user account and password. (If using standard or ETRN email, these fields can be blank.) Also, for multi-drop, you can either use the default e-smith server and gateway mail sorting method, or you can specify a particular message header to use for mail sorting.</P></FONT></TD></TR> <TR><TD><FONT FACE="Helvetica,Arial">POP user account (for multi-drop):</FONT></TD> <TD><FONT FACE="Helvetica,Arial"><INPUT TYPE="text" NAME="account" VALUE="popaccount" SIZE=32></FONT></TD></TR> <TR><TD><FONT FACE="Helvetica,Arial">POP user password (for multi-drop):</FONT></TD> <TD><FONT FACE="Helvetica,Arial"><INPUT TYPE="text" NAME="password" VALUE="poppassword" SIZE=32></FONT></TD></TR> <TR><TD><FONT FACE="Helvetica,Arial">Select sort method (for multi-drop):</FONT></TD> <TD><FONT FACE="Helvetica,Arial"><SELECT NAME="specifyHeader">
+<OPTION SELECTED VALUE="off">Default
+<OPTION  VALUE="on">Specify below
+</SELECT>
+</FONT></TD></TR> <TR><TD><FONT FACE="Helvetica,Arial">Select sort header (for multi-drop):</FONT></TD> <TD><FONT FACE="Helvetica,Arial"><INPUT TYPE="text" NAME="header"  SIZE=32></FONT></TD></TR> <TR><TD>&nbsp;</TD> <TD><FONT FACE="Helvetica,Arial"><B><INPUT TYPE="submit" NAME="action" VALUE="Save"></B></FONT></TD></TR></TABLE><INPUT TYPE="hidden" NAME="state" VALUE="perform"></FORM><P><HR> <FONT SIZE="-1">copyright (c) 1999-2001 e-smith, inc. all rights reserved.</FONT></P></FONT></DIV></BODY></HTML>
